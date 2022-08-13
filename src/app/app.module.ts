@@ -9,12 +9,15 @@ import {HeaderComponent} from "./header/header.component";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule} from "@angular/forms";
+import {DomesticComponent} from "./domestic/domestic.component";
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-   HeaderComponent
+   HeaderComponent,
+    DomesticComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import {FormsModule} from "@angular/forms";
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    NgxPaginationModule
     // Ng2SearchPipeModule,
 
   ],
