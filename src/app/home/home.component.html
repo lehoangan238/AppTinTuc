@@ -1,11 +1,11 @@
 <section class="body">
   <div class="body-content">
     <div class="logo-text fl">
-      {{todayString     }},
+            {{todayString     }},
 
-      {{weatherResult.name}}
-      {{temp}}°C,
-      {{weatherResult.weather?.main}}
+        {{weatherResult.name}}
+        {{temp}}°C,
+        {{weatherResult.weather?.main}}
 
     </div>
     <div class="hot-news fr clearfix">
@@ -33,36 +33,36 @@
         <div class="top-news clearfix">
           <div class="main-news">
             <ng-container *ngFor="let latestItem of latestNewsResult.slice(0,1)">
-              <div class="top1-focus">
-                <a href="{{latestItem.link}}"
-                   title="{{latestItem.title}}"
-                   class="img544x340">
+            <div class="top1-focus">
+              <a href="{{latestItem.link}}"
+                 title="{{latestItem.title}}"
+                 class="img544x340">
 
-                  <img
-                    src="{{latestItem.thumbnail }}"
-                    alt="{{latestItem.title}}"
-                    class="img544x340">
+                <img
+                  src="{{latestItem.thumbnail }}"
+                  alt="{{latestItem.title}}"
+                  class="img544x340">
 
-                </a>
-
-
-                <div class="gradient">
-                  <h3 class="news-title" >
-                    <!--                  <a-->
-                    <!--                    href="{{latestItem.link}}"-->
-                    <!--                    title="{{latestItem.title}}">-->
-                    <!--                    {{latestItem.title}}-->
-
-                    <!--                  </a>-->
-                  </h3>
-                  <p class="sapo">
-                    {{latestItem.content.slice(latestItem.content.search('">') + 2)}}
-                  </p>
+              </a>
 
 
-                </div>
+              <div class="gradient">
+                <h3 class="news-title" >
+<!--                  <a-->
+<!--                    href="{{latestItem.link}}"-->
+<!--                    title="{{latestItem.title}}">-->
+<!--                    {{latestItem.title}}-->
+
+<!--                  </a>-->
+                </h3>
+                <p class="sapo">
+                  {{latestItem.content.slice(latestItem.content.search('">') + 2)}}
+                </p>
+
 
               </div>
+
+            </div>
             </ng-container>
 
           </div>
@@ -314,26 +314,26 @@
                   <a href="/noi-thang.htm" title="Xem tất cả" class="view-more">Xem tất cả</a>
                 </div>
                 <ng-container *ngFor="let noiThangItem of noiThangResult.slice(0,1)">
-                  <div class="news-item">
+                <div class="news-item">
 
-                    <a href="{{noiThangItem.link}}"
-                       title="{{noiThangItem.title}}" class="img216x133"
-                    >
+                  <a href="{{noiThangItem.link}}"
+                     title="{{noiThangItem.title}}" class="img216x133"
+                  >
 
                       <img
                         src="{{noiThangItem.thumbnail}}"
                         alt="Thu phí ôtô &quot;không đặt nặng lời, lỗ&quot;: Khó nghe quá!" class="img216x133">
 
-                    </a>
+                  </a>
 
-                    <h3 style="margin-bottom: 0px;"><a href="/noiThang" class="title"
-                                                       title="{{noiThangItem.title}}">{{noiThangItem.title}}</a>
-                    </h3>
-                    <div class="news-info clearfix">
-                      <div class="icon-views" style="display: none;"></div>
-                      <div class="number-views get-views" style="display: none;"><span>0</span> người quan tâm</div>
-                    </div>
+                  <h3 style="margin-bottom: 0px;"><a href="/noiThang" class="title"
+                                                     title="{{noiThangItem.title}}">{{noiThangItem.title}}</a>
+                  </h3>
+                  <div class="news-info clearfix">
+                    <div class="icon-views" style="display: none;"></div>
+                    <div class="number-views get-views" style="display: none;"><span>0</span> người quan tâm</div>
                   </div>
+                </div>
                 </ng-container>
               </div>
             </div>
@@ -367,11 +367,11 @@
           </div>
         </div>
         <div class="clearfix"></div>
-        <div class="box-cate-home mg_t15 clearfix">
+        <div class="box-cate-home mg_t15 clearfix box-cate-domestic">
           <div class="box-cate-container">
             <div class="box-cate-title">
 
-              <h2><a routerLink="/trong-nuoc" title="Trong nước" class="title">Trong nước</a></h2>
+              <h2><a routerLink="/trong-nuoc" title="Trong nước" class="title">TRONG NƯỚC</a></h2>
               <ul class="sub-cate">
 
                 <li>

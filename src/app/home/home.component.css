@@ -90,8 +90,8 @@
 .body .body-content .top-news .main-news .sapo {
   padding-top: 10px;
   color: #000;
-  font: 14px/20px Roboto-Regular;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -304,11 +304,12 @@
 .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item h3 {
   width: 310px;
   float: left;
+  font-weight: 500;
 }
 
 .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item a.title {
   color: #000;
-  font-size: 18px;
+font-size: 18px;
   margin-left: 18px;
   margin-bottom: 10px;
   display: block;
@@ -541,9 +542,11 @@ ul {
 .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-title h2 {
   float: left;
   color: #197ade;
+  font-weight: 500;
+
 }
 .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-title h2 a{
-
+font-size: 20px;
   color: #197ade;
 }
 .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-title ul.sub-cate {
@@ -592,11 +595,12 @@ ul {
   color: #1a1a1a;
   font-size:18px;
   line-height: 1.41;
+  font-weight: 500;
 }
 
 .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .news-main .sapo {
   color: #000;
-  font-size: 14px;
+font-size: 14px;
   line-height: 1.5;
 }
 
@@ -642,8 +646,10 @@ ul {
 
 .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news li h3 .title {
   color: #000;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.46;
+  font-weight: 400;
+
 }
 
 .box-covid-vaccine {
@@ -863,8 +869,27 @@ ul {
   .news-horizontal {
     display: none;
   }
-
-
+  .body .body-content .top-news .main-news {
+    width: 100%;
+  }
+  .body .body-content {
+    width: 100%;
+  }
+  .body .body-content .top-news .main-news .gradient {
+    width: 100%;
+  }
+  .body .body-content .box-content .box-left .box-news-with-cate .box-news-list {
+    width: 100%;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-title ul.sub-cate {
+    display: none;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left {
+    width: 100%;
+  }
+  .body .body-content .box-content .box-left .box-news-with-cate .fl{
+    float: unset !important;
+  }
 }
 
 /* PC with min screen */
@@ -876,12 +901,8 @@ ul {
 @media (min-width: 740px) and (max-width: 1023px) {
 
 
-  .body .body-content {
-    width: 100%;
-  }
-  .body .body-content .top-news .main-news {
-    width: 100%;
-  }
+
+
   .img544x340 {
     width: 100%;
     height: auto;
@@ -891,12 +912,8 @@ ul {
     width: 100%;
     line-height: 38px;
   }
-  .body .body-content .top-news .main-news .gradient {
-    width: 100%;
-  }
-  .body .body-content .box-content .box-left .box-news-with-cate .box-news-list {
-    width: 100%;
-  }
+
+
   .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item h3 {
     font-size: 20px;
     width: 60%;
@@ -910,19 +927,15 @@ ul {
   .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item .news-info .news-relate li a.title{
     font-size: 18px;
   }
-  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-title ul.sub-cate {
-    display: none;
-  }
+
   .img114x71{
     height: 100px;
     width: unset;
   }
-  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left {
-    width: 100%;
-  }
+
   .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news{
     float: left;
-    width: calc(100% - 300px);
+   width: calc(100% - 300px);
   }
   .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news li h3  a{
     font-size: 18px;
@@ -940,10 +953,69 @@ ul {
   .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .news-main{
     width: 300px;
   }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news li {
+    display: flex;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news li h3 .title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
 }
 
 /* Mobile */
 @media (max-width: 739px) {
 
+  .body .body-content .box-content .box-left{
+    width: 100%;
+  }
+  .img544x340 {
+    width: 100%;
+    height: auto;
+  }
+  .img220x139{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
 
+  .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item h3{
+   width: 100%;
+  }
+  .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item .news-info{
+   margin-left: 10px;
+  }
+  .body .body-content .box-content .box-left .box-news-with-cate .box-news-list .news-item a.title:before{
+    display: none;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .news-main{
+    width: 100%;
+  }
+  .img256x160 {
+    width: 100%;
+    height: auto;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-left: 0;
+    border: none;
+    padding-top: 10px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news li h3{
+    width: 180px;
+  }
+  .body .body-content .box-content .box-left .box-cate-home .box-cate-container .box-cate-detail .news-left .sub-news li h3 a.title{
+  font-size: 13px;
+  }
 }
