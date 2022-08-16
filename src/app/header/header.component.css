@@ -388,10 +388,26 @@ img {
   width: 17px;
   height: 17px;
 }
+.topic .login-form {
+  flex-shrink: 0;
+  max-width: 250px;
+  margin-left: 10px;
+  min-width: 150px;
+}
+.topic .login-form .area__authenticate {
+  border: solid 2px #094e95;
+  width: 150px;
+  text-align: center;
+  padding: 8px 0;
+  position: relative;
+  top: 15px;
+}
+.topic .login-form .area__authenticate .authen-title {
+  font: bold 11px Tahoma;
+  color: #094e95;
+}
 .menu-container ul.menu-top li.search .search-input-active {
   width: 160px;
   visibility: visible;
   opacity: 1;
 }
-
-
