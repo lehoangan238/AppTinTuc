@@ -12,6 +12,7 @@ import { DomesticComponent } from './domestic/domestic.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForeignComponent } from './foreign/foreign.component';
+import {InfiniteScrollModule} from "ngx-infinite-scroll";
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { HealthComponent } from './health/health.component';
 import { EducationComponent } from './education/education.component';
@@ -47,7 +48,7 @@ import { YouReadComponent } from './you-read/you-read.component';
 import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 import { FooterMobileComponent } from './footer-mobile/footer-mobile.component';
 import { EconomyComponent } from './economy/economy.component';
-
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -95,8 +96,10 @@ import { EconomyComponent } from './economy/economy.component';
     HttpClientModule,
     NgxPaginationModule,
     BrowserAnimationsModule,
+    InfiniteScrollModule,
     FormsModule,
     Ng2SearchPipeModule,
+    LoadingBarRouterModule,
   ],
   providers: [
     {
@@ -111,7 +114,8 @@ import { EconomyComponent } from './economy/economy.component';
         ],
       } as SocialAuthServiceConfig,
     },
-  ],
+  ]
+  ,
   bootstrap: [AppComponent]
 })
 export class AppModule { }

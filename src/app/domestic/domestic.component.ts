@@ -23,5 +23,7 @@ export class DomesticComponent implements OnInit {
       this.totalLength = result.items.length;
     })
   }
-
+  replaceAll(str: string, search: string, replacement: string) {
+    return str.replace(new RegExp(search, 'g'), replacement);
+  }
 }
