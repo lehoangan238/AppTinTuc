@@ -12,6 +12,7 @@ import { DomesticComponent } from './domestic/domestic.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForeignComponent } from './foreign/foreign.component';
+import {InfiniteScrollModule} from "ngx-infinite-scroll";
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { HealthComponent } from './health/health.component';
 import { EducationComponent } from './education/education.component';
@@ -95,6 +96,7 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     HttpClientModule,
     NgxPaginationModule,
     BrowserAnimationsModule,
+    InfiniteScrollModule,
     FormsModule,
     Ng2SearchPipeModule,
     LoadingBarRouterModule,
