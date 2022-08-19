@@ -48,6 +48,7 @@ import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 import { FooterMobileComponent } from './footer-mobile/footer-mobile.component';
 import { EconomyComponent } from './economy/economy.component';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -98,6 +99,7 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     FormsModule,
     Ng2SearchPipeModule,
     LoadingBarRouterModule,
+    FontAwesomeModule,
   ],
   providers: [
     {
