@@ -99,7 +99,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormsModule,
     Ng2SearchPipeModule,
     LoadingBarRouterModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [
     {

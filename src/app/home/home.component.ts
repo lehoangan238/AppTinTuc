@@ -3,7 +3,6 @@ import {NewsApiService} from "../Service/news-api.service";
 import {faCloud} from '@fortawesome/free-solid-svg-icons'
 import {faSun} from '@fortawesome/free-solid-svg-icons'
 import {faMoon} from '@fortawesome/free-solid-svg-icons'
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
