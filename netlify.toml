@@ -1,0 +1,7 @@
+[build]
+  publish = "dist/app-tin-tuc"
+  command = "ng build -c=production"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
